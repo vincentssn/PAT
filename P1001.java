@@ -37,7 +37,7 @@ public class P1001 {
                 boolean isLastSecondIndex = i == tmp.length() - 2;
                 boolean isMod3 = i % 3 == 2;
                 boolean isLastIndex = i == tmp.length() - 1;
-                if (isMod3 && !isLastSecondIndex && !isLastIndex) {
+                if (isMod3 && !isLastSecondIndex && !isLastIndex) {       //第一次提交时漏了一种情况：负数且3整除符号位的情况，会出现,-dddd的结果
                     rsl = rsl.append(',');
                 }
             }
